@@ -27,7 +27,7 @@ class Dishes extends Component {
 
 
                 <div className="list">
-                    {this.props.loading && <div>Loading...</div>}
+                    {this.props.loading }
                 {this.props.dishes && Object.keys(this.props.dishes).map((key) => {
                     return <Card
                         title={this.props.dishes[key].title}
